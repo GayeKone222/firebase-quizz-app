@@ -18,9 +18,14 @@ It contains 4 subjects and each has 5 questions with 15 minutes timer.
 12. Firestore batch commit
 13. Bloc & Cubit for state management
 14. Dark mode & WHite mode
+15. Dependency injection 
 
 
 ## Screens
 
-![auth](quiz-app-screens-images/image1.jpeg)
+ 
+<img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image1.jpeg" width="200" height="400" />
+<img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image2.jpeg" width="200" height="400" />
+<img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image3_1.jpeg" width="200" height="400" /><img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image3_2.jpeg" width="200" height="400" /><img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image4.jpeg" width="200" height="400" /><img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image5.jpeg" width="200" height="400" /><img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image6.jpeg" width="200" height="400" /><img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image7.jpeg" width="200" height="400" /><img src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image8.jpeg" width="200" height="400" /><img
+src="https://github.com/GayeKone222/firebase-quizz-app/blob/main/quiz-app-screens-images/image9.jpeg" width="200" height="400" />
 
