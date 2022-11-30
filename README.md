@@ -1,16 +1,26 @@
-# firebase_study_app
+# Scientific Quiz App
+This is a scientific quiz app made using Flutter and Firebase as backend.
+It contains 4 subjects and each has 5 questions with 15 minutes timer.
 
-A new Flutter project.
+## Features
 
-## Getting Started
+1. Firebase app creation with CLI
+2. Firebase upload data programmatically
+3. Work with firebase collections, documents and fields
+4. Firebase storage for uploading image
+5. Read data from firebase
+6. Firebase data upload batch operation
+7. Firebase google sign in
+8. Google auth before accessing data
+9. Upload user data to firebase
+10. Upload app study score data to firebase
+11. Store data per user in firebase
+12. Firestore batch commit
+13. Bloc & Cubit for state management
+14. Dark mode & WHite mode
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Screens
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Dillinger uses a number of open source projects to work properly:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
