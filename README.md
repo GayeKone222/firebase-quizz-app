@@ -22,5 +22,5 @@ It contains 4 subjects and each has 5 questions with 15 minutes timer.
 
 ## Screens
 
-Dillinger uses a number of open source projects to work properly:
+![auth](quiz-app-screens-images/image1.jpeg)
 
