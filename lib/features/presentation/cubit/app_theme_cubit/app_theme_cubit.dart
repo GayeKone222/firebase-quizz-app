@@ -15,7 +15,7 @@ class AppThemeCubit extends Cubit<ThemeData> {
       required this.prefs})
       : super(prefs.get("theme") == null ||
                 prefs.get("theme") == AppTheme.lightTheme.name
-            ? DarkTheme().buildDarkTheme()
+            ? LightTheme().buildLightTheme()
             : DarkTheme().buildDarkTheme());
 
   final SharedPreferences prefs;

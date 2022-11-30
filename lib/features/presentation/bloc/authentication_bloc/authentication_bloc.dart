@@ -47,13 +47,6 @@ class AuthenticationBloc
         add(AuthenticationStateChanged(
             authenticationDetailModel: authenticationDetailModel));
       });
-
-      // User? user = FirebaseAuth.instance.currentUser;
-      // if (user == null) {
-      //   emit(state.copyWith(status: AuthenticationStatus.unAuthenticated));
-      // } else {
-      //   emit(state.copyWith(status: AuthenticationStatus.authenticated));
-      // }
     } catch (e) {
       print("error :$e");
       emit(state.copyWith(status: AuthenticationStatus.unAuthenticated));
@@ -63,7 +56,9 @@ class AuthenticationBloc
   void _onAuthenticationStateChanged(AuthenticationStateChanged event,
       Emitter<AuthenticationState> emit) async {
     if (event.authenticationDetailModel.isValid!) {
-      emit(state.copyWith(status: AuthenticationStatus.authenticated, user: event.authenticationDetailModel));
+      emit(state.copyWith(
+          status: AuthenticationStatus.authenticated,
+          user: event.authenticationDetailModel));
     } else {
       emit(state.copyWith(status: AuthenticationStatus.unAuthenticated));
     }
@@ -86,20 +81,6 @@ class AuthenticationBloc
       } else {
         emit(state.copyWith(status: AuthenticationStatus.unAuthenticated));
       }
-
-      // final googleUser = await googleSignIn.signIn();
-
-      // if (googleUser == null) {
-      //   emit(state.copyWith(status: AuthenticationStatus.unAuthenticated));
-      // } else {
-      //   final googleAuth = await googleUser.authentication;
-      //   final credential = GoogleAuthProvider.credential(
-      //       accessToken: googleAuth.accessToken, idToken: googleAuth.idToken);
-
-      //   await FirebaseAuth.instance.signInWithCredential(credential);
-
-      //   //save GoogleSignInAccount
-      // }
     } catch (e) {
       print("authenticateWithGoogle error : $e");
       emit(state.copyWith(status: AuthenticationStatus.unAuthenticated));

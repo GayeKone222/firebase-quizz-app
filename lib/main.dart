@@ -69,24 +69,15 @@ class MyApp extends StatelessWidget {
         // ),
         BlocProvider<DbFirebaseUploadBloc>(
             create: (BuildContext context) => locator<DbFirebaseUploadBloc>()
-            // DbFirebaseUploadBloc(repository: repositoryFireStoreDatabase),
             ),
 
         BlocProvider<AuthenticationBloc>(
           create: (BuildContext context) => locator<AuthenticationBloc>()
-            // AuthenticationBloc(
-            //     repository: repositoryFirebaseAuthentication,
-            //     repositoryFireStoreDatabase: repositoryFireStoreDatabase)
             ..add(AuthenticationInit()),
         ),
         BlocProvider<AppThemeCubit>(
             create: (BuildContext context) => locator<AppThemeCubit>()
-            //  AppThemeCubit(
-
-            //     prefs:
-            //     //themeData: UIParameters.buildLightTheme(context)
-
-            //     )
+           
             ),
         BlocProvider<FirebaseStorageBloc>(
           create: (BuildContext context) => locator<FirebaseStorageBloc>()
@@ -114,18 +105,7 @@ class MyApp extends StatelessWidget {
           lazy: false,
         ),
         BlocProvider<AllAnswerdQuestionsCubit>(
-          create: (context) {
-            //  List<QuestionsModel>? questions
-            //               = context.select(
-            //                 (QuestionsBloc b) =>
-            //                     b.state.allQuestions);
-            return locator<AllAnswerdQuestionsCubit>()
-              // AllAnswerdQuestionsCubit(questionBloc: questionsBloc
-              //     //     // questions: questions??[]
-
-              //     )
-              ..init();
-          },
+          create: (context) => locator<AllAnswerdQuestionsCubit>()..init(),
           lazy: false,
         )
       ],
