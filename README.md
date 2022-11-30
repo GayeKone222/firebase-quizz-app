@@ -19,6 +19,7 @@ It contains 4 subjects and each has 5 questions with 15 minutes timer.
 13. Bloc & Cubit for state management
 14. Dark mode & WHite mode
 15. Dependency injection 
+16. Local storage (Shared Preference)
 
 
 ## Screens
